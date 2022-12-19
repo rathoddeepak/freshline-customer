@@ -1,0 +1,24 @@
+{
+  "name": "react-native-selection-menu",
+  "version": "1.0.2",
+  "description": "React Native: Native Selection Menu",
+  "main": "RNSelectionMenu.js",
+  "homepage": "https://github.com/prscX/react-native-selection-menu.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prscX/react-native-selection-menu.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Pranav Raj Singh Chauhan",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "prettier-pack": "0.0.9"
+  },
+  "license": "Apache License 2.0"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fresh Line</string>
+    <string name="geo_api_key">AIzaSyDsyUiH0s5Vn2J25bYl8uihy29ZCWQeeeg</string>
+    <string name="truecaller_appkey">bmJIxcce46d1ad70a479896ba64f42b5b5f00</string>
+    <string name="facebook_app_id">917659309065405</string>
+	<string name="fb_login_protocol_scheme">fb917659309065405</string>    
+    <string moduleConfig="true" name="CodePushDeploymentKey">ig_w9Gxw3j8c-ZbCS7jkv0wl8c7xSo_UAvPRR</string>
+</resources>
