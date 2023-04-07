@@ -9,7 +9,6 @@ buildscript {
     }
 }
 
-apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 import com.android.build.OutputFile
 
 /**
@@ -208,7 +207,8 @@ android {
         pickFirst '**/libjsc.so' 
         pickFirst '**/libc++_shared.so'
         pickFirst '**/libfbjni.so'
-        pickFirst '**/libturbomodulejsijni.so'        
+        pickFirst '**/libturbomodulejsijni.so'
+        pickFirst 'META-INF/*.kotlin_module'
     }    
 }
 
@@ -227,6 +227,15 @@ dependencies {
     implementation project(':react-native-shimmer')
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'androidx.multidex:multidex:2.0.1'
+
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
